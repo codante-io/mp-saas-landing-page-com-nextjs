@@ -708,14 +708,6 @@ video {
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\/images\/background\.png\'\)\]{
-  background-image: url('./images/background.png');
-}
-
-.bg-\[url\(\'\/src\/images\/background\.png\'\)\]{
-  background-image: url('/src/images/background.png');
-}
-
 .bg-\[url\(\'\.\.\/images\/background\.png\'\)\]{
   background-image: url('../images/background.png');
 }
