@@ -23,3 +23,33 @@ a:hover{
     border: 1px solid #6B7280;
     
 }
+/* 
+.dropdown-menu{
+    position: absolute; 
+    top:3.5rem;
+    right: 32px; 
+    display: none;
+    height: 30px;
+    width: 130px;
+    border-radius: 10px;
+    background:rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    transition: height .3s;
+    overflow: hidden;
+} */
+.dropdown-menu.open{
+    height: 180px;
+} 
+.dropdown-menu li{
+    display: flex;
+    padding: 0.7rem;
+    justify-content: center;
+    align-items: center;
+}
+
+ @media (max-width:640px){
+    .dropdown-menu{
+        display: block;
+    }
+ }
+
