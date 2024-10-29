@@ -560,12 +560,8 @@ video {
   position: absolute;
 }
 
-.left-8{
-  left: 2rem;
-}
-
-.right-8{
-  right: 2rem;
+.right-0{
+  right: 0px;
 }
 
 .top-14{
@@ -714,8 +710,8 @@ video {
   border-radius: 0.5rem;
 }
 
-.rounded-md{
-  border-radius: 0.375rem;
+.rounded-none{
+  border-radius: 0px;
 }
 
 .border{
@@ -926,6 +922,20 @@ a:hover{
   }
 }
 
+@media (min-width: 400px){
+  .min-\[400px\]\:right-8{
+    right: 2rem;
+  }
+
+  .min-\[400px\]\:w-\[180px\]{
+    width: 180px;
+  }
+
+  .min-\[400px\]\:rounded-md{
+    border-radius: 0.375rem;
+  }
+}
+
 @media (min-width: 640px){
   .sm\:block{
     display: block;
@@ -941,10 +951,6 @@ a:hover{
 
   .sm\:w-60{
     width: 15rem;
-  }
-
-  .sm\:w-\[150px\]{
-    width: 150px;
   }
 
   .sm\:flex-row{
