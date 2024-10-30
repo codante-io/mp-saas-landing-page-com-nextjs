@@ -3,6 +3,9 @@ function scrollToElement(selector) {
   console.log("dbsblmçlml");
 
   el.scrollIntoView({ behavior: "smooth", block: "start" });
+
+  dropDownMenu.classList.remove("open");
+  toggleBtnIcon.classList = "fa-solid fa-bars";
 }
 
 const toggleBtn = document.querySelector(".toggle-btn");
@@ -16,9 +19,4 @@ toggleBtn.onclick = function () {
   const isOpen = dropDownMenu.classList.contains("open");
 
   toggleBtnIcon.classList = isOpen ? "fa-solid fa-xmark" : "fa-solid fa-bars";
-  // dropDownMenu.classList.toggle("hidden");
-  /*   dropDownMenu.classList.toggle("block");
-  isClosed
-    ? dropDownMenu.classList.remove("hidden")
-    : dropDownMenu.classList.toggle("hidden"); */
 };

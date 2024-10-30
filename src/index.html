@@ -35,29 +35,31 @@
               </li>
             </ul>
           </div>
-          <div class="toggle-btn block sm:hidden cursor-pointer">
+          <div class="toggle-btn block sm:hidden cursor-pointer z-20">
             <i class="fa-solid fa-bars"></i>
           </div>
         </nav>
         <div
-          class="dropdown-menu absolute right-0 min-[400px]:right-8 rounded-none min-[400px]:rounded-md top-14 overflow-hidden bg-black/35 w-full min-[400px]:w-[180px] block sm:hidden h-[0] duration-300"
+          class="dropdown-menu absolute left-[-100%] top-0 right-0 w-full h-full bg-slate-100 block sm:hidden duration-500"
         >
-          <li class="flex justify-center items-center pb-3">
-            <a href="javascript:onclick=scrollToElement('#howItsWorks')"
-              >Funcionamento</a
-            >
-          </li>
-          <li class="flex justify-center items-center pb-3">
-            <a href="javascript:onclick=scrollToElement('#price')">Preço</a>
-          </li>
-          <li class="flex justify-center items-center pb-3">
-            <a id="login" href="*">Login</a>
-          </li>
+          <div class="flex flex-col h-full items-center justify-center">
+            <li class="flex justify-center items-center pb-3">
+              <a href="javascript:onclick=scrollToElement('#howItsWorks')"
+                >Funcionamento</a
+              >
+            </li>
+            <li class="flex justify-center items-center pb-3">
+              <a href="javascript:onclick=scrollToElement('#price')">Preço</a>
+            </li>
+            <li class="flex justify-center items-center pb-3">
+              <a id="login" href="*">Login</a>
+            </li>
+          </div>
         </div>
       </header>
       <main>
         <section
-          class="hero flex flex-col gap-6 items-center w-3/5 h-[calc(100%-70px)] m-auto text-center"
+          class="hero flex flex-col gap-6 items-center w-full sm:w-3/5 h-[calc(100%-70px)] m-auto text-center"
         >
           <h1 class="text-[46px] sm:text-[56px] font-bold mt-14">
             Simplifique Seus Estudos
@@ -96,7 +98,7 @@
     >
       <h1 class="text-[40px] font-bold">Como funciona?</h1>
       <div
-        class="explains flex flex-col sm:flex-row justify-center items-center w-4/5 gap-4"
+        class="explains flex flex-col sm:flex-row justify-center items-center sm:w-4/5 gap-4"
       >
         <div class="image w-[46%]">
           <img src="./images/woman.svg" alt="" />
@@ -134,7 +136,7 @@
       class="preco flex min-h-screen bg-[url('../images/background.png')] bg-cover"
     >
       <div
-        class="info flex flex-col justify-center items-center text-center w-3/5 pt-10 m-auto gap-8"
+        class="info flex flex-col justify-center items-center text-center w-4/5 sm:w-3/5 pt-10 m-auto gap-8"
       >
         <h1 class="text-[46px] sm:text-[56px] font-bold">
           Preço Simples e Transparente
