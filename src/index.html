@@ -14,7 +14,9 @@
     <title>Livro SaaS - Vercel</title>
   </head>
   <body class="font-sans">
-    <section class="cover min-h-screen bg-[url('../images/background.png')]">
+    <section
+      class="cover min-h-screen bg-[url('../images/background.png')]"
+    >
       <header class="flex py-5 px-11">
         <nav class="flex justify-between items-center w-full h-10">
           <div class="logo cursor-pointer">
@@ -35,27 +37,33 @@
               </li>
             </ul>
           </div>
-          <div class="toggle-btn block sm:hidden cursor-pointer z-20">
+          <div class="toggle-btn block sm:hidden cursor-pointer" onclick="toogleDropDown()">
             <i class="fa-solid fa-bars"></i>
           </div>
         </nav>
-        <div
-          class="dropdown-menu absolute left-[-100%] top-0 right-0 w-full h-full bg-slate-100 block sm:hidden duration-500"
+        <!-- <div
+          class="dropdown-menu absolute left-[-100%] top-0 right-0 w-4/5 h-full bg-zinc-800/90 block sm:hidden duration-500"
         >
           <div class="flex flex-col h-full items-center justify-center">
-            <li class="flex justify-center items-center pb-3">
-              <a href="javascript:onclick=scrollToElement('#howItsWorks')"
+            <li class="flex justify-center items-center pb-3 text-3xl">
+              <a
+                href="javascript:onclick=scrollToElement('#howItsWorks')"
+                class="text-lg"
                 >Funcionamento</a
               >
             </li>
             <li class="flex justify-center items-center pb-3">
-              <a href="javascript:onclick=scrollToElement('#price')">Preço</a>
+              <a
+                href="javascript:onclick=scrollToElement('#price') "
+                class="text-lg"
+                >Preço</a
+              >
             </li>
             <li class="flex justify-center items-center pb-3">
-              <a id="login" href="*">Login</a>
+              <a id="login" href="*" class="text-lg">Login</a>
             </li>
           </div>
-        </div>
+        </div> -->
       </header>
       <main>
         <section
@@ -91,7 +99,33 @@
         </section>
       </main>
     </section>
-
+    <section class="dropdown">
+      <div
+        class="dropdown-menu absolute left-[-100%] top-0 right-0 w-4/5 h-full bg-zinc-800/90 block sm:hidden duration-500"
+      >
+          <div class="close-btn" onclick="toogleDropDown()"><i class="fa-solid fa-xmark text-gray-500 w-full py-1 px-6 text-3xl text-right cursor-pointer"></i></div>
+        </header>
+        <div class="flex flex-col h-full items-center justify-center">
+          <li class="flex justify-center items-center pb-3 text-3xl">
+            <a
+              href="javascript:onclick=scrollToElement('#howItsWorks')"
+              class="text-lg"
+              >Funcionamento</a
+            >
+          </li>
+          <li class="flex justify-center items-center pb-3">
+            <a
+              href="javascript:onclick=scrollToElement('#price') "
+              class="text-lg"
+              >Preço</a
+            >
+          </li>
+          <li class="flex justify-center items-center pb-3">
+            <a id="login" href="*" class="text-lg">Login</a>
+          </li>
+        </div>
+      </div>
+    </section>
     <section
       id="howItsWorks"
       class="como-funciona flex flex-col justify-center items-center min-h-screen py-1"
