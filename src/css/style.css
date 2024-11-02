@@ -10,10 +10,9 @@ li{
 }
 li a{
     text-decoration: none;
-    color: #000000;
     font-size: 0.85rem;
     padding: 8px 10px;  
-}
+} 
 a:hover{
     color: #6B7280;
 }
